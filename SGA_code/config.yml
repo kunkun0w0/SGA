@@ -1,0 +1,70 @@
+
+MODEL_CONFIG:
+  IMG_SIZE: 256
+
+TRAINING_CONFIG:
+
+  EPOCH: 40
+  BATCH_SIZE: 16
+
+  # lr and lambda
+  G_LR : 1e-4
+  D_LR : 2e-4
+  LAMBDA_G_FAKE  : 1
+  LAMBDA_G_RECON : 30
+  LAMBDA_G_SYTLE : 50
+  LAMBDA_G_PERCEP : 0.01
+  LAMBDA_D_FAKE  : 1
+  LAMBDA_D_REAL  : 1
+
+  # Data augmentation
+  AUGMENT : 'tps' # or 'tps, elastic
+
+  GAN_LOSS : 'lsgan'
+
+  # Optimizer
+  OPTIM : ADAM
+  BETA1: 0.5
+  BETA2: 0.999
+  D_CRITIC : 1
+  G_CRITIC : 1
+
+  # Settings
+  NUM_WORKER : 4
+  MODE : 'train'
+  CPU_SEED : 123
+  GPU_SEED : 456
+  GRADIENT_COSINE : 'False' # 'True' or 'False'
+
+  # noise parameter
+  DIST : 'uniform' # of 'gaussian'
+  A : -1
+  B : 1
+  MEAN : 0
+  STD : 0.01
+  #spectral norm
+  G_SPEC : 'False'
+  D_SPEC : 'True'
+
+  # Directory
+  TRAIN_DIR : 'anime' # 'anime' or 'afhq_cat' or 'afhq_dog' or afhq_wild
+  LOG_DIR : 'logs'
+  SAMPLE_DIR : 'samples'
+  RESULT_DIR : 'results'
+  MODEL_DIR : 'models'
+
+  # GPU
+  GPU: 'cuda'
+
+  # Step Size
+
+  SAMPLE_STEP : 1 # epoch based
+  LOG_STEP : 100 # iteration based
+  SAVE_STEP : 1 # epoch based
+  SAVE_START : 1
+  LR_DECAY_STEP : 20
+
+TEST_CONFIG:
+  TEST_EPOCH : 100
+
+
