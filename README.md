@@ -1,6 +1,6 @@
 # Eliminating Gradient Conflict in Reference-based Line-art Colorization
 
-The official code of *Eliminating Gradient Conflict in Reference-based Line-art Colorization*
+The official code of *Eliminating Gradient Conflict in Reference-based Line-art Colorization* [[arxiv]](https://arxiv.org/abs/2207.06095)
 
 We propose a new attention module called **Stop-Gradient Attention**.
 The core code is showed as follow:
