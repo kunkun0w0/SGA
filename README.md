@@ -1,6 +1,7 @@
 # Eliminating Gradient Conflict in Reference-based Line-art Colorization
 
-The official code of *Eliminating Gradient Conflict in Reference-based Line-art Colorization* [[arxiv]](https://arxiv.org/abs/2207.06095)
+> The official code of ECCV2022 paper: [**Eliminating Gradient Conflict in Reference-based Line-art Colorization**](https://arxiv.org/abs/2207.06095)
+> <br>Zekun Li, Zhengyang Geng, Zhao Kang, Wenyu Chen, Yibo Yang
 
 We propose a new attention module called **Stop-Gradient Attention**.
 The core code is showed as follow:
