@@ -3,7 +3,12 @@
 > The official code of **ECCV2022** paper: [**Eliminating Gradient Conflict in Reference-based Line-Art Colorization**](https://arxiv.org/abs/2207.06095)
 > <br>Zekun Li, Zhengyang Geng, Zhao Kang, Wenyu Chen, Yibo Yang
 
-We propose a new attention module called **Stop-Gradient Attention**.
+We propose a new attention module called **Stop-Gradient Attention**. Our main idea is detaching the gradient when backpropagating the attention map.
+
+The module is illustrated as follows:
+
+<img src="./images/SGA.png" height="450">
+
 The core code is showed as follow:
 
 ```python3
