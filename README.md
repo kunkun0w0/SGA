@@ -29,3 +29,15 @@ X = leaky_relu(Wq(X))
 Y = leaky_relu(Wv(Y))
 Z = torch.bmm(A,Y) + X
 ```
+
+# bibtex
+```
+@inproceedings{li2022eliminating,
+  title={Eliminating Gradient Conflict in Reference-based Line-Art Colorization},
+  author={Li, Zekun and Geng, Zhengyang and Kang, Zhao and Chen, Wenyu and Yang, Yibo},
+  booktitle={European Conference on Computer Vision},
+  pages={579--596},
+  year={2022},
+  organization={Springer}
+}
+```
